@@ -1,26 +1,30 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --bg-base: #FAF7F4;
+  --bg-card-warm: #FFF5F0;
+  --bg-card-white: #FFFFFF;
+  --bg-section: #F5F0EB;
+  --accent-blush: #E8D4CA;
+  --accent-mocha: #D4B8A8;
+  --accent-navy: #3D5A80;
+  --accent-coral: #F0887C;
+  --accent-mint: #8BC4A0;
+  --accent-yellow: #F2C94C;
+  --text-primary: #333333;
+  --text-secondary: #999999;
+  --text-on-warm: #5A3825;
+  --text-on-warm-sub: #A08070;
+  --cta-primary-bg: #2D2D2D;
+  --cta-primary-text: #FFFFFF;
+  --radius-button: 24px;
+  --radius-card: 16px;
+  --radius-tag: 12px;
+  --font-main: "Hiragino Sans", "SF Pro Text", -apple-system, "Noto Sans JP", sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-main);
 }
